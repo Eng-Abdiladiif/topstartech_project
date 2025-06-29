@@ -6,16 +6,8 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, User, LogOut, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useAuth } from "@/components/providers/AuthProvider"
-import logo   from "../../image/Logo.png"
+import logo from "../../image/Logo.png"
 import Image from "next/image"
-import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from '@clerk/nextjs'
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -49,8 +41,7 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-3 group">
-        
-          <Image  src = {logo}  className= "w-20 h-20" width = {0}  height = {0} alt = "image"/>
+            <Image src={logo} className="w-20 h-20" width={0} height={0} alt="image"/>
           </Link>
 
           {/* Desktop Navigation */}
@@ -73,7 +64,6 @@ export default function Navbar() {
             {user ? (
               <div className="flex items-center space-x-3">
                 <span className="text-sm text-slate-600 font-medium">Welcome, {user.name}</span>
-                <SignedOut>
                 <Button
                   variant="outline"
                   size="sm"
@@ -83,14 +73,10 @@ export default function Navbar() {
                   <LogOut className="w-4 h-4 mr-2" />
                   Logout
                 </Button>
-                </SignedOut>
               </div>
             ) : (
               <div className="flex items-center space-x-3">
-
-
-                <SignedIn>
-                
+                <Link href="/auth/login">
                   <Button
                     variant="outline"
                     size="sm"
@@ -99,8 +85,7 @@ export default function Navbar() {
                     <User className="w-4 h-4 mr-2" />
                     Login
                   </Button>
-                  </SignedIn>
-                
+                </Link>
                 <Link href="/auth/register">
                   <Button
                     size="sm"
@@ -160,7 +145,7 @@ export default function Navbar() {
                     </div>
                   ) : (
                     <div className="space-y-3">
-                      
+                      <Link href="/auth/login" className="block">
                         <Button
                           variant="outline"
                           size="sm"
@@ -169,7 +154,7 @@ export default function Navbar() {
                           <User className="w-4 h-4 mr-2" />
                           Login
                         </Button>
-                      
+                      </Link>
                       <Link href="/auth/register" className="block">
                         <Button
                           size="sm"

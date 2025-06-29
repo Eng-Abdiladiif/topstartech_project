@@ -5,14 +5,6 @@ import "./globals.css"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import { AuthProvider } from "@/components/providers/AuthProvider"
-import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from '@clerk/nextjs'
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,7 +26,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-gray-50 text-gray-900`}>
         <AuthProvider>
@@ -44,6 +35,5 @@ export default function RootLayout({
         </AuthProvider>
       </body>
     </html>
-    </ClerkProvider>
   )
 }
