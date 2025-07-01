@@ -70,7 +70,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight text-white text-shadow"
+            className="text-3xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight text-white text-shadow"
           >
             Digital Innovation
             <br />
@@ -82,7 +82,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed font-light"
+            className="text-md md:text-2xl text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed font-light"
           >
             We create extraordinary digital experiences that transform businesses and captivate audiences. From
             cutting-edge web solutions to intelligent systems that scale.
@@ -98,7 +98,9 @@ export default function Hero() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-10 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
+                className="bg-gradient-to-r from-emerald-600 to-teal-600
+                 hover:from-emerald-700 hover:to-teal-700 text-white 
+                 px-5 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
               >
                 Start Your Journey
                 <ArrowRight className="w-5 h-5 ml-2" />

@@ -67,7 +67,7 @@ export default function Services() {
           <h2 className="text-4xl md:text-6xl font-black mb-6 text-slate-900">
             Services That <span className="gradient-text">Transform</span>
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-md text-slate-600 max-w-3xl mx-auto font-light leading-relaxed">
             We deliver comprehensive digital solutions that push boundaries and create exceptional value for your
             business.
           </p>

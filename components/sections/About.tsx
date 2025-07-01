@@ -27,7 +27,7 @@ export default function About() {
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               About <span className="gradient-text">Top Star Tech</span>
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-md text-gray-600 mb-8 leading-relaxed">
               We are a passionate team of digital innovators, designers, and developers committed to transforming
               businesses through cutting-edge technology and creative solutions.
             </p>

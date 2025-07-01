@@ -79,7 +79,7 @@ export default function MissionVision() {
             Built on{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Purpose</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Every great achievement starts with a clear vision, unwavering mission, and strong values that guide our
             journey forward.
           </p>

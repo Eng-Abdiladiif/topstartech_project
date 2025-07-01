@@ -52,16 +52,18 @@ export default function AboutPage() {
                 <span  className="gradient-text pl-10">innovation</span>
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-md text-muted-foreground mb-8 max-w-2xl mx-auto">
               We're a team of passionate innovators dedicated to creating exceptional digital experiences that transform
               businesses and empower communities worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 bg-gray-900 
+              <Button size="lg" className="text-lg md:px-8
+              px-3 bg-gray-900 
                text-white  rounded-xl">
                 Join Our Team
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 bg-gray-100
+              <Button size="lg" variant="outline" className="text-lg md:px-8
+              px-3 bg-gray-100
                shadow-md  shadow-gray-500  rounded-xl">
                 Our Work
               </Button>

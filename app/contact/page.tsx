@@ -90,7 +90,7 @@ export default function ContactPage() {
                 Touch
               </span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-md text-gray-600 max-w-2xl mx-auto leading-relaxed">
               Ready to transform your ideas into reality? We're here to help you build something extraordinary.
             </p>
           </motion.div>

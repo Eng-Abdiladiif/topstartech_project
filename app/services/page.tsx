@@ -119,7 +119,7 @@ export default function ServicesPage() {
                 Expert Services
               </span>
             </h1>
-            <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-md text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
               We deliver comprehensive digital solutions that drive growth, enhance user experience, and position your
               business for long-term success in the digital landscape.
             </p>

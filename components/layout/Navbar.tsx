@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { useAuth } from "@/components/providers/AuthProvider"
 import logo from "../../image/Logo.png"
 import Image from "next/image"
+import ModeToggle from "../ModeToggle"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -99,12 +100,14 @@ export default function Navbar() {
           </div>
 
           {/* Mobile menu button */}
+          
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 rounded-xl hover:bg-slate-100 transition-colors"
           >
             {isOpen ? <X className="w-6 h-6 text-slate-700" /> : <Menu className="w-6 h-6 text-slate-700" />}
           </button>
+
         </div>
       </div>
 
